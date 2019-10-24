@@ -10,6 +10,16 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader'
+            },
+            {
+                // Transform our own .css files with PostCSS and CSS-modules
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i, 
+                loader: "file-loader?name=[name].[ext]"
             }
         ]
     },

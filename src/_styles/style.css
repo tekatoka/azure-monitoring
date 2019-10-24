@@ -1,0 +1,66 @@
+html, body, #app, .jumbotron {
+    height: 100%;
+}
+
+body {
+    background-color: #ebeff2!important;
+    color:#777!important;
+    font-size: 1.1rem!important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+table tr th, table tr td {
+    font-size: 1.1rem!important;
+}
+
+button, button > span {
+    font-size: 1rem!important;
+}
+
+.mainContainer {
+    width:100%;
+    padding:20px;
+}
+
+.mainPageTile {
+    padding:20px;
+    min-height: 350px;
+}
+
+.failed {
+    background-color: red;
+}
+
+.succeeded {
+    background-color: green;
+}
+
+.timeStamp.ok {
+    color: #000;
+}
+.timeStamp.failed {
+    color: red;
+}
+
+.statusLabel {
+    box-shadow: none!important;
+    height: 24px!important;
+    cursor: default!important;
+}
+
+.statusLabel.succeeded, .statusLabel.succeeded > label {
+    background-color: green!important;
+    color:#fff!important;
+}
+
+.statusLabel.failed, .statusLabel.failed > label {
+    background-color: red!important;
+    color:#fff!important;
+}
